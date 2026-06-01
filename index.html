@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Frontend | Desarrollador Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><strong>Brayan<span>.M</span></strong></div>
+    <nav>
+      <a href="#sobre-mi">Trayectoria</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="nav-btn">Contactar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="badge">Disponible para nuevos retos</span>
+        
+        <h1 class="gradient-text">Soy <span class="typewriter"></span><span class="cursor">|</span></h1>
+        
+        <p>Radicado en Barranquilla. Transformo ideas en interfaces web modernas y funcionales, combinando lógica de programación con una excelente experiencia de usuario y storytelling visual.</p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn">Ver mi trabajo</a>
+          <a href="https://www.instagram.com/brayangaris?igsh=MW02bHpoZjZwZndjYw==" class="btn btn-outline" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="perfil.jpeg" alt="Foto de perfil" class="hero-photo floating">
+        <div class="glow-circle"></div>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Mi Trayectoria</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <h4>Tecnólogo en Programación de Software</h4>
+          <p class="timeline-date">SENA Regional Atlántico • En curso</p>
+          <p>Formación enfocada en el desarrollo de aplicaciones web, lógica de programación y bases de datos.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <h4>Producción Audiovisual y Storytelling</h4>
+          <p class="timeline-date">Certificación (12 horas)</p>
+          <p>Conocimientos en diseño de guiones y narrativas, útiles para crear experiencias de usuario atractivas y estructurar la información visualmente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Arsenal Tecnológico</h2>
+      <div class="skills-container">
+        <div class="skill-category reveal">
+          <h3>Desarrollo Web</h3>
+          <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Herramientas & Integraciones</h3>
+          <div class="skills">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Google Sheets API</span>
+            <span class="skill-tag">WhatsApp API</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Prototipado & Hardware</h3>
+          <div class="skills">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Arduino Uno R3</span>
+            <span class="skill-tag">ESP32</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos Destacados</h2>
+      <div class="grid">
+        
+        <article class="card reveal">
+          <div class="card-img-wrapper">
+            <img src="image (1).png" alt="Hamburguesería" class="card-img">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-ver-mas" data-id="hamburguesas">Ver Más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Menú de Hamburguesería</h3>
+            <p>App web conectada a una base de datos en hojas de cálculo y automatización de pedidos por WhatsApp.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img-wrapper">
+            <img src="image (2).png" alt="Biblioteca Digital" class="card-img">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-ver-mas" data-id="Disquera">Ver Más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Disquera</h3>
+            <p>Plataforma interactiva para ver más sobre sus artistas y servicios de una disquera.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img-wrapper">
+            <img src="image.png" alt="Sitio IED Los Laureles" class="card-img">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-ver-mas" data-id="laureles">Ver Más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Web Institucional</h3>
+            <p>Portal desarrollado para la IED Los Laureles, estructurando la misión, visión y servicios educativos.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="intereses">
+      <h2>Más allá del código</h2>
+      <div class="grid interests-grid">
+        
+        <div class="interest-card reveal">
+          <div class="interest-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <h3>Hardware & IoT</h3>
+          <p>Exploración y prototipado con placas de desarrollo como Arduino y módulos ESP32 para proyectos electrónicos DIY.</p>
+        </div>
+
+        <div class="interest-card reveal">
+          <div class="interest-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3>Gestión de Servidores</h3>
+          <p>Administración, configuración y resolución de problemas técnicos en servidores multijugador y entornos online.</p>
+        </div>
+
+        <div class="interest-card reveal">
+          <div class="interest-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+              <line x1="7" y1="2" x2="7" y2="22"></line>
+              <line x1="17" y1="2" x2="17" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="2" y1="7" x2="7" y2="7"></line>
+              <line x1="2" y1="17" x2="7" y2="17"></line>
+              <line x1="17" y1="17" x2="22" y2="17"></line>
+              <line x1="17" y1="7" x2="22" y2="7"></line>
+            </svg>
+          </div>
+          <h3>Narrativa Audiovisual</h3>
+          <p>Aplicación de técnicas de storytelling y guionaje para estructurar experiences digitales más inmersivas y atractivas.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="reveal">
+      <h2>Trabajemos juntos</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>¡Hablemos de tu próximo proyecto!</h3>
+          <p>Ya sea que necesites crear una plataforma desde cero, optimizar un sistema web existente o simplemente quieras conectar para compartir ideas, mi bandeja de entrada está abierta.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/brayangaris?igsh=MW02bHpoZjZwZndjYw==" class="btn btn-outline" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/brayan-mercado-garizabalo-314350389?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-outline" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        
+        <!-- Formulario configurado con FormSubmit -->
+        <form class="contact-form" action="https://formsubmit.co/brayanmercado.gg@gmail.com" method="POST">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="correo" placeholder="Correo" required>
+          <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+      <div class="modal-body-layout">
+        
+        <div class="modal-img-container">
+          <div class="carousel">
+            <div class="carousel-track" id="modalCarouselTrack"></div>
+            
+            <button id="carouselPrev" class="carousel-btn prev" aria-label="Imagen anterior">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button id="carouselNext" class="carousel-btn next" aria-label="Siguiente imagen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            
+            <div class="carousel-dots" id="modalCarouselDots"></div>
+          </div>
+        </div>
+
+        <div class="modal-info-container">
+          <h3 id="modalTitle">Título del Proyecto</h3>
+          <div class="modal-tech-tags" id="modalTech"></div>
+          <p id="modalDesc">Descripción del proyecto...</p>
+          <div class="modal-actions-buttons">
+            <a href="#" id="modalWebBtn" class="btn" target="_blank">Visitar Sitio</a>
+            <a href="#" id="modalRepoBtn" class="btn btn-outline" target="_blank">Ver Código</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
