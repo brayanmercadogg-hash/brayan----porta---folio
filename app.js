@@ -265,4 +265,48 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+    // ==========================================================================
+    // 4. ENVÍO ASÍNCRONO DEL FORMULARIO (SOLUCIÓN AL ERROR 405)
+    // ==========================================================================
+    const contactForm = document.querySelector(".contact-form");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Detiene la recarga y la gestión local que causa el 405
+
+            const formData = new FormData(contactForm);
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+
+            // Feedback visual e inhabilitación para evitar múltiples clics
+            submitBtn.textContent = "Enviando...";
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (response.ok) {
+                    alert("¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.");
+                    contactForm.reset(); // Limpia los campos del formulario
+                } else {
+                    alert("Ocurrió un problema en el servidor de envíos. Por favor, inténtalo más tarde.");
+                }
+            } catch (error) {
+                console.error("Error de red al procesar el formulario:", error);
+                alert("Error de conexión. No se pudo establecer comunicación con el servidor.");
+            } finally {
+                // Restaurar el estado original del botón de envío
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+
 });
